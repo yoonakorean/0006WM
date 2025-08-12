@@ -95,17 +95,19 @@
     const gameTitle = "0-6 單字聽音辨義測驗";
 
     const questions = [
-     { "word": "父母", "korean": "부모", "audio": "audio/000601W.mp3", "choices": ["父母", "情侶", "兄弟"] },
-     { "word": "油豆腐", "korean": "유부", "audio": "audio/000602W.mp3", "choices": ["豆漿", "油豆腐", “牛奶"] },
-     { "word": "海", "korean": "바다", "audio": "audio/000603W.mp3", "choices": ["湖", "河", "海"] },
-     { "word": "親愛的", "korean": "여보", "audio": "audio/000604W.mp3", "choices": ["親愛的", "朋友", "弟弟"] },
-     { "word": "蒼蠅", "korean": "파리", "audio": "audio/000605W.mp3", "choices": ["蚊子", "蒼蠅", "蟑螂"] },
-     { "word": "公寓", "korean": "아파트", "audio": "audio/000606W.mp3", "choices": ["學校", "辦公室", "公寓"] },
-     { "word": "葡萄", "korean": "포도", "audio": "audio/000607W.mp3", "choices": ["葡萄", "蘋果", "橘子"] },
-     { "word": "皮膚", "korean": "피부", "audio": "audio/000608W.mp3", "choices": ["皮膚", "毛髮", "嘴唇"] },
-     { "word": "爸爸", "korean": "아빠", "audio": "audio/000609W.mp3", "choices": ["叔叔", "爸爸", "哥哥"] },
-     { "word": "根", "korean": "뿌리", "audio": "audio/000610W.mp3", "choices": ["葉子", "根", "樹枝"] },
-     { "word": "親親", "korean": "뽀뽀", "audio": "audio/000611W.mp3", "choices": ["打架", "親親", "擁抱"] },
+  { "word": "父母", "korean": "부모", "audio": "audio/000601W.mp3", "choices": ["父母", "情侶", "兄弟"] },
+  { "word": "油豆腐", "korean": "유부", "audio": "audio/000602W.mp3", "choices": ["豆漿", "油豆腐", "豆腐"] },
+  { "word": "海", "korean": "바다", "audio": "audio/000603W.mp3", "choices": ["湖", "河", "海"] },
+  { "word": "親愛的", "korean": "여보", "audio": "audio/000604W.mp3", "choices": ["親愛的", "朋友", "弟弟"] },
+  { "word": "蒼蠅", "korean": "파리", "audio": "audio/000605W.mp3", "choices": ["蚊子", "蒼蠅", "蟑螂"] },
+  { "word": "公寓", "korean": "아파트", "audio": "audio/000606W.mp3", "choices": ["學校", "辦公室", "公寓"] },
+  { "word": "葡萄", "korean": "포도", "audio": "audio/000607W.mp3", "choices": ["葡萄", "蘋果", "橘子"] },
+  { "word": "皮膚", "korean": "피부", "audio": "audio/000608W.mp3", "choices": ["皮膚", "毛髮", "嘴唇"] },
+  { "word": "爸爸", "korean": "아빠", "audio": "audio/000609W.mp3", "choices": ["叔叔", "爸爸", "哥哥"] },
+  { "word": "根", "korean": "뿌리", "audio": "audio/000610W.mp3", "choices": ["葉子", "根", "樹枝"] },
+  { "word": "親親", "korean": "뽀뽀", "audio": "audio/000611W.mp3", "choices": ["打架", "親親", "擁抱"] },
+
+
 
 
     ];
@@ -114,7 +116,7 @@
     let current = 0;
     let correct = 0;
     let timerId;
-    const totalSeconds = shuffledQuestions.length * 5;
+    const totalSeconds = shuffledQuestions.length * 8;
     let timeLeft = totalSeconds;
 
     const audio = document.getElementById("audio");
